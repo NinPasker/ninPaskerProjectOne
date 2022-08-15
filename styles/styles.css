@@ -250,3 +250,13 @@ html {
   right: 0;
   text-align: center;
 }
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Chathura", sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
