@@ -8,3 +8,28 @@ body {
     color: $white;
 }
 
+h1,
+h2 {
+    font-family: $headingText;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    @include fontSize(261.4);
+    letter-spacing: 2.4px;
+    color: $logoColor;
+}
+
+h2 {
+    @include fontSize(83.2);
+    line-height: 94.7px;
+    letter-spacing: 2.6px;
+}
+
+h4 {
+    @include fontSize(68);
+    line-height: 58px;
+    letter-spacing: 2.2px;
+}
+

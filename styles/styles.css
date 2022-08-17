@@ -260,3 +260,31 @@ body {
   font-size: 1rem;
   color: #FFFFFF;
 }
+
+h1,
+h2 {
+  font-family: "Tulpen One", cursive;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 261.4px;
+  font-size: 13.07rem;
+  letter-spacing: 2.4px;
+  color: #FF8327;
+}
+
+h2 {
+  font-size: 83.2px;
+  font-size: 4.16rem;
+  line-height: 94.7px;
+  letter-spacing: 2.6px;
+}
+
+h4 {
+  font-size: 68px;
+  font-size: 3.4rem;
+  line-height: 58px;
+  letter-spacing: 2.2px;
+}
