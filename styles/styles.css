@@ -288,3 +288,37 @@ h4 {
   line-height: 58px;
   letter-spacing: 2.2px;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  background-color: #111010;
+}
+.navBar .mainMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  background-image: url(../assets/home-image-1.jpg);
+}
