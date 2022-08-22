@@ -282,11 +282,16 @@ h2 {
   letter-spacing: 2.6px;
 }
 
-h4 {
+h3 {
   font-size: 68px;
   font-size: 3.4rem;
   line-height: 58px;
   letter-spacing: 2.2px;
+}
+
+h3,
+p {
+  margin: 0;
 }
 
 ul {
@@ -300,6 +305,16 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.topNav,
+.hostEvents {
+  background-color: #111010;
+}
+
+.planLocationsContainer,
+.hostEventsImgContainer {
+  background-color: #220303;
 }
 
 .navBar {
@@ -321,4 +336,7 @@ a {
 
 header {
   background-image: url(../assets/home-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
