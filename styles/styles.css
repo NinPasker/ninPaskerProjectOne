@@ -340,3 +340,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+footer {
+  background-color: #111010;
+  text-align: center;
+}
