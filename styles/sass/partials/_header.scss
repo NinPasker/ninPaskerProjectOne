@@ -3,4 +3,26 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    min-height: 80vh;
+
+    .headerContentContainer {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+
+        h2 {
+            line-height: 0;
+        }
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        max-height: 50vh;
+    }
+
+
 }

@@ -6,13 +6,13 @@ body {
     font-family: $bodyText;
     font-size: $baseFontSize;
     color: $white;
+    background-color: black;
 }
 
 h1,
 h2 {
     font-family: $headingText;
     margin: 0;
-    text-align: center;
 }
 
 h1 {
@@ -33,3 +33,6 @@ h3 {
     letter-spacing: 2.2px;
 }
 
+a {
+    color: $white;
+}
