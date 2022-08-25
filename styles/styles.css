@@ -264,7 +264,6 @@ body {
 
 h1,
 h2 {
-  font-family: "Tulpen One", cursive;
   margin: 0;
 }
 
@@ -273,13 +272,15 @@ h1 {
   font-size: 13.07rem;
   letter-spacing: 2.4px;
   color: #FF8327;
+  font-family: "Tulpen One", cursive;
 }
 
 h2 {
   font-size: 83.2px;
   font-size: 4.16rem;
   line-height: 94.7px;
-  letter-spacing: 2.6px;
+  letter-spacing: normal;
+  font-family: "Chathura", sans-serif;
 }
 
 h3 {
@@ -343,6 +344,19 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Chathura", sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+  font-size: 1.9rem;
+  letter-spacing: 1.9px;
+  margin-top: 20px;
+}
+.navBar .mainMenu .logo {
+  font-family: "Tulpen One", cursive;
+  font-size: 50px;
+  font-size: 2.5rem;
+  text-transform: none;
+  letter-spacing: none;
 }
 
 header {
@@ -357,9 +371,6 @@ header .headerContentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -367,16 +378,22 @@ header .headerContentContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  padding-top: 350px;
+}
+header .headerContentContainer h1,
+header .headerContentContainer h2 {
+  z-index: 9;
 }
 header .headerContentContainer h2 {
-  line-height: 0;
+  margin-top: -90px;
+  margin-left: -230px;
 }
 header img {
   position: absolute;
   right: 0;
-  max-height: 50vh;
+  bottom: -150px;
+  max-height: 70vh;
+  z-index: 0;
 }
 
 footer {

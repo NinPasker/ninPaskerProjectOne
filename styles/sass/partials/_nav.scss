@@ -8,5 +8,17 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        font-family: $bodyText;
+        text-transform: uppercase;
+        @include fontSize(38);
+        letter-spacing: 1.9px;
+        margin-top: 20px;
+
+        & .logo {
+            font-family: $headingText;
+            @include fontSize(50);
+            text-transform: none;
+            letter-spacing: none;
+        }
     }
 }

@@ -8,20 +8,27 @@ header {
 
     .headerContentContainer {
         display: flex;
-        justify-content: flex-end;
         flex-direction: column;
         align-items: center;
-        align-content: flex-start;
+        padding-top: 350px;
+
+        h1,
+        h2 {
+            z-index: 9;
+        }
 
         h2 {
-            line-height: 0;
+            margin-top: -90px;
+            margin-left: -230px;
         }
     }
 
     img {
         position: absolute;
         right: 0;
-        max-height: 50vh;
+        bottom: -150px;
+        max-height: 70vh;
+        z-index: 0;
     }
 
 
