@@ -330,6 +330,21 @@ a {
   width: 90%;
 }
 
+.button {
+  background-color: #BF2603;
+  padding: 5px 30px;
+  font-family: "Tulpen One", cursive;
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+}
+
+.topNav p,
+.planLocationsContainer p,
+.hostEvents p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
 .navBar {
   position: fixed;
   top: 0;
@@ -451,4 +466,53 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.planLocationsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.planLocationsContainer .newLocations img {
+  -webkit-box-shadow: 20px 20px #FF8327;
+          box-shadow: 20px 20px #FF8327;
+  position: relative;
+  top: -40px;
+}
+.planLocationsContainer .newLocations .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 45%;
+}
+.planLocationsContainer .planAhead {
+  position: relative;
+  margin-top: 80px;
+}
+.planLocationsContainer .planAhead img {
+  -webkit-box-shadow: -20px 20px #FF8327;
+          box-shadow: -20px 20px #FF8327;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+.planLocationsContainer .planAhead .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 45%;
 }

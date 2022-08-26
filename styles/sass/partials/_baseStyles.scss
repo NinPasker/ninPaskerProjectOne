@@ -31,3 +31,19 @@ a {
     margin: 0 auto;
     width: 90%;
 }
+
+.button {
+    background-color: $buttonColor;
+    padding: 5px 30px;
+    font-family: $headingText;
+    letter-spacing: 2px;
+    margin-bottom: 80px;
+}
+
+.topNav p,
+.planLocationsContainer p,
+.hostEvents p {
+    margin-bottom: 20px;
+    text-align: justify;
+
+}

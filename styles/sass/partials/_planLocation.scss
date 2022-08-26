@@ -1,0 +1,36 @@
+.planLocationsContainer {
+    display: flex;
+
+    .newLocations img {
+        box-shadow: 20px 20px $logoColor;
+        position: relative;
+        top: -40px;
+    }
+
+    .newLocations .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 45%;
+        
+    }
+
+    .planAhead {
+        position: relative;
+        margin-top: 80px;
+    }
+
+    .planAhead img {
+        box-shadow: -20px 20px $logoColor;
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+    }
+
+    .planAhead .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 45%;
+    }
+}
