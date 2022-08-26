@@ -1,8 +1,9 @@
 .navBar {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: transparent;
     z-index: 10;
+    width: 100%;
 
     .mainMenu {
         display: flex;
@@ -12,7 +13,6 @@
         text-transform: uppercase;
         @include fontSize(38);
         letter-spacing: 1.9px;
-        margin-top: 20px;
 
         & .logo {
             font-family: $headingText;

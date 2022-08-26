@@ -6,7 +6,8 @@ body {
     font-family: $bodyText;
     font-size: $baseFontSize;
     color: $white;
-    background-color: black;
+    background-color: $bkgColor1;
+    @include fontSize(30);
 }
 
 h1,

@@ -259,7 +259,9 @@ body {
   font-family: "Chathura", sans-serif;
   font-size: 1rem;
   color: #FFFFFF;
-  background-color: black;
+  background-color: #111010;
+  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 h1,
@@ -329,10 +331,11 @@ a {
 }
 
 .navBar {
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: transparent;
   z-index: 10;
+  width: 100%;
 }
 .navBar .mainMenu {
   display: -webkit-box;
@@ -349,7 +352,6 @@ a {
   font-size: 38px;
   font-size: 1.9rem;
   letter-spacing: 1.9px;
-  margin-top: 20px;
 }
 .navBar .mainMenu .logo {
   font-family: "Tulpen One", cursive;
@@ -393,10 +395,38 @@ header img {
   right: 0;
   bottom: -150px;
   max-height: 70vh;
-  z-index: 0;
 }
 
 footer {
   background-color: #111010;
   text-align: center;
+}
+
+.topNav {
+  margin: 200px 0 100px 0;
+}
+.topNav .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.topNav .wrapper ul li {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.topNav .wrapper ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
