@@ -516,3 +516,50 @@ footer {
           align-items: flex-start;
   width: 45%;
 }
+
+.hostEvents {
+  margin-top: 150px;
+}
+.hostEvents h3 {
+  margin-bottom: 20px;
+  color: #FF8327;
+}
+.hostEvents .hostPartyContainer {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.hostEvents .fullBleedPic {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.hostEvents .eventsContainer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.hostEvents .eventsContainer .wrapper .eventsImgContainer {
+  width: 50%;
+}
+.hostEvents .eventsContainer .wrapper .eventsImgContainer img {
+  width: 100%;
+  -webkit-box-shadow: -20px 20px #FF8327;
+          box-shadow: -20px 20px #FF8327;
+}
+.hostEvents .eventsContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 150px;
+}
+.hostEvents .eventsContentContainer h3 {
+  margin-top: -15px;
+}
