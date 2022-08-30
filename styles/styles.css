@@ -413,7 +413,7 @@ header img {
 }
 
 footer {
-  background-color: #111010;
+  background-color: #2C2C2C;
   text-align: center;
 }
 
@@ -579,4 +579,14 @@ footer {
 }
 .hostEvents .hostEventsImgContainer .wrapper ul li img {
   width: 100%;
+}
+
+header {
+  background-image: url(../assets/contact-header-1.jpg);
+}
+header .contactTitle {
+  font-family: "Chathura", sans-serif;
+  font-size: 90px;
+  font-size: 4.5rem;
+  color: #FFFFFF;
 }

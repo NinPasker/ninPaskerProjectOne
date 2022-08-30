@@ -1,0 +1,9 @@
+header {
+    background-image: url(../assets/contact-header-1.jpg);
+
+    .contactTitle {
+        font-family: $bodyText;
+        @include fontSize(90);
+        color: $white;
+    }
+}
