@@ -1,9 +1,30 @@
 header {
     background-image: url(../assets/contact-header-1.jpg);
+    min-height: 80vh;
+}
 
-    .contactTitle {
-        font-family: $bodyText;
-        @include fontSize(90);
-        color: $white;
+address {
+    font-style: normal;
+
+    .socialBar {
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+        @include fontSize(20);
+    }
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+
+    #name,
+    #email {
+        width: 50%;
+    }
+
+    #message,
+    .button {
+        width: 100%;
     }
 }

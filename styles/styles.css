@@ -345,6 +345,14 @@ a {
   text-align: justify;
 }
 
+.contactTitle,
+.blogTitle {
+  font-family: "Chathura", sans-serif;
+  font-size: 90px;
+  font-size: 4.5rem;
+  color: #FFFFFF;
+}
+
 .navBar {
   position: fixed;
   top: 0;
@@ -415,6 +423,7 @@ header img {
 footer {
   background-color: #2C2C2C;
   text-align: center;
+  overflow: hidden;
 }
 
 .topNav {
@@ -583,10 +592,36 @@ footer {
 
 header {
   background-image: url(../assets/contact-header-1.jpg);
+  min-height: 80vh;
 }
-header .contactTitle {
-  font-family: "Chathura", sans-serif;
-  font-size: 90px;
-  font-size: 4.5rem;
-  color: #FFFFFF;
+
+address {
+  font-style: normal;
+}
+address .socialBar {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  font-size: 1rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+form #name,
+form #email {
+  width: 50%;
+}
+form #message,
+form .button {
+  width: 100%;
 }

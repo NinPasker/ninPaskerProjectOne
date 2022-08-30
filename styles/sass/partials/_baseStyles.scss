@@ -47,3 +47,10 @@ a {
     text-align: justify;
 
 }
+
+.contactTitle,
+.blogTitle {
+    font-family: $bodyText;
+    @include fontSize(90);
+    color: $white;
+}
