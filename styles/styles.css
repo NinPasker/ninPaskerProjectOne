@@ -563,3 +563,20 @@ footer {
 .hostEvents .eventsContentContainer h3 {
   margin-top: -15px;
 }
+.hostEvents .hostEventsImgContainer {
+  padding: 70px 0 50px 0;
+}
+.hostEvents .hostEventsImgContainer .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hostEvents .hostEventsImgContainer .wrapper ul li {
+  width: 30%;
+}
+.hostEvents .hostEventsImgContainer .wrapper ul li img {
+  width: 100%;
+}

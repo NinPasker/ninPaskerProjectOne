@@ -40,4 +40,21 @@
             margin-top: -15px;
         }
     }
+
+    .hostEventsImgContainer {
+        padding: 70px 0 50px 0;
+    }
+
+    .hostEventsImgContainer .wrapper ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: 30%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
