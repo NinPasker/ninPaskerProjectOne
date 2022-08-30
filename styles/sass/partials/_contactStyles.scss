@@ -1,6 +1,13 @@
-header {
+.contactHeader {
     background-image: url(../assets/contact-header-1.jpg);
-    min-height: 80vh;
+    min-height: 75vh;
+    display: flex;
+    background-position: center;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+    }
 }
 
 address {
@@ -17,14 +24,67 @@ address {
 form {
     display: flex;
     flex-wrap: wrap;
+    background-color: $bkgColor2;
+    padding: 50px 50px 40px;
+    box-shadow: 20px 20px $logoColor;
+    position: absolute;
+    right: 150px;
+    top: 500px;
+    width: 50%;
 
     #name,
     #email {
-        width: 50%;
+        width: calc(50% - 30px);
+        border-bottom: 2px solid $white;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    #name {
+        margin-right: 15px;
+    }
+
+    #email {
+        margin-left: 15px;
     }
 
     #message,
     .button {
-        width: 100%;
+        width: calc(100% - 30px);
     }
+
+    #message {
+        padding-left: 20px;
+        padding-top: 40px;
+        resize: none;
+        margin-bottom: 50px;
+        border: 2px solid $white;
+    }
+
+    .button {
+        border: none;
+        margin: 0;
+        color: $white;
+    }
+
+    #name,
+    #email,
+    #message {
+        background-color: transparent;
+        color: $white;
+
+        &::placeholder {
+            opacity: 1;
+            font-family: $bodyText;
+        }
+    }
+}
+
+aside {
+    position: relative;
+    margin: 100px 0 250px;
 }

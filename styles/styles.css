@@ -590,9 +590,21 @@ footer {
   width: 100%;
 }
 
-header {
+.contactHeader {
   background-image: url(../assets/contact-header-1.jpg);
-  min-height: 80vh;
+  min-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+}
+.contactHeader .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 address {
@@ -616,12 +628,78 @@ form {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #220303;
+  padding: 50px 50px 40px;
+  -webkit-box-shadow: 20px 20px #FF8327;
+          box-shadow: 20px 20px #FF8327;
+  position: absolute;
+  right: 150px;
+  top: 500px;
+  width: 50%;
 }
 form #name,
 form #email {
-  width: 50%;
+  width: calc(50% - 30px);
+  border-bottom: 2px solid #FFFFFF;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+form #name {
+  margin-right: 15px;
+}
+form #email {
+  margin-left: 15px;
 }
 form #message,
 form .button {
-  width: 100%;
+  width: calc(100% - 30px);
+}
+form #message {
+  padding-left: 20px;
+  padding-top: 40px;
+  resize: none;
+  margin-bottom: 50px;
+  border: 2px solid #FFFFFF;
+}
+form .button {
+  border: none;
+  margin: 0;
+  color: #FFFFFF;
+}
+form #name,
+form #email,
+form #message {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+form #name::-webkit-input-placeholder, form #email::-webkit-input-placeholder, form #message::-webkit-input-placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
+}
+form #name::-moz-placeholder, form #email::-moz-placeholder, form #message::-moz-placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
+}
+form #name:-ms-input-placeholder, form #email:-ms-input-placeholder, form #message:-ms-input-placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
+}
+form #name::-ms-input-placeholder, form #email::-ms-input-placeholder, form #message::-ms-input-placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
+}
+form #name::placeholder,
+form #email::placeholder,
+form #message::placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
+}
+
+aside {
+  position: relative;
+  margin: 100px 0 250px;
 }
