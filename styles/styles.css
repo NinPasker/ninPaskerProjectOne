@@ -622,7 +622,7 @@ address .socialBar {
   font-size: 1rem;
 }
 
-form {
+.contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,8 +637,8 @@ form {
   top: 500px;
   width: 50%;
 }
-form #name,
-form #email {
+.contactForm #name,
+.contactForm #email {
   width: calc(50% - 30px);
   border-bottom: 2px solid #FFFFFF;
   border-top: none;
@@ -648,53 +648,53 @@ form #email {
   padding-bottom: 20px;
   padding-left: 20px;
 }
-form #name {
+.contactForm #name {
   margin-right: 15px;
 }
-form #email {
+.contactForm #email {
   margin-left: 15px;
 }
-form #message,
-form .button {
+.contactForm #message,
+.contactForm .button {
   width: calc(100% - 30px);
 }
-form #message {
+.contactForm #message {
   padding-left: 20px;
   padding-top: 40px;
   resize: none;
   margin-bottom: 50px;
   border: 2px solid #FFFFFF;
 }
-form .button {
+.contactForm .button {
   border: none;
   margin: 0;
   color: #FFFFFF;
 }
-form #name,
-form #email,
-form #message {
+.contactForm #name,
+.contactForm #email,
+.contactForm #message {
   background-color: transparent;
   color: #FFFFFF;
 }
-form #name::-webkit-input-placeholder, form #email::-webkit-input-placeholder, form #message::-webkit-input-placeholder {
+.contactForm #name::-webkit-input-placeholder, .contactForm #email::-webkit-input-placeholder, .contactForm #message::-webkit-input-placeholder {
   opacity: 1;
   font-family: "Chathura", sans-serif;
 }
-form #name::-moz-placeholder, form #email::-moz-placeholder, form #message::-moz-placeholder {
+.contactForm #name::-moz-placeholder, .contactForm #email::-moz-placeholder, .contactForm #message::-moz-placeholder {
   opacity: 1;
   font-family: "Chathura", sans-serif;
 }
-form #name:-ms-input-placeholder, form #email:-ms-input-placeholder, form #message:-ms-input-placeholder {
+.contactForm #name:-ms-input-placeholder, .contactForm #email:-ms-input-placeholder, .contactForm #message:-ms-input-placeholder {
   opacity: 1;
   font-family: "Chathura", sans-serif;
 }
-form #name::-ms-input-placeholder, form #email::-ms-input-placeholder, form #message::-ms-input-placeholder {
+.contactForm #name::-ms-input-placeholder, .contactForm #email::-ms-input-placeholder, .contactForm #message::-ms-input-placeholder {
   opacity: 1;
   font-family: "Chathura", sans-serif;
 }
-form #name::placeholder,
-form #email::placeholder,
-form #message::placeholder {
+.contactForm #name::placeholder,
+.contactForm #email::placeholder,
+.contactForm #message::placeholder {
   opacity: 1;
   font-family: "Chathura", sans-serif;
 }
@@ -702,4 +702,21 @@ form #message::placeholder {
 aside {
   position: relative;
   margin: 100px 0 250px;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-header-1.jpg);
+  min-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+}
+.blogHeader .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

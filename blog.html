@@ -25,14 +25,84 @@
         </div> <!-- END .wrapper -->
     </nav> <!-- END .navBar -->
 
-    <header>
+    <header class="blogHeader">
         <div class="wrapper">
             <h1 class="blogTitle">Blog</h1>
         </div>
     </header>
 
     <main>
-        
+        <section class="blogPost">
+            <div class="blogPostImgContainer">
+                <img src="./assets/post-image.jpg" alt="Plates of food nicely presented on a glass countertop.">
+            </div>
+
+            <div class="blogPostContentContainer">
+                <h3>New Menu!</h3>
+                <p class="date">Monday January 30, 2019 by Saron</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt quisquam ullam ipsam corrupti consequuntur fuga delectus fugiat. Nobis nam nihil voluptates accusantium repellat aperiam expedita officia esse ex quisquam. Alias officiis sint voluptatum officia. Repellat, at!</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum enim voluptatum alias dolores! Corrupti, fuga laboriosam quia temporibus ducimus itaque sint in quod pariatur earum, nostrum libero possimus incidunt soluta. Autem, voluptatibus quia nobis a consequuntur molestias sint quos repudiandae corrupti veniam et at est cum magni? Eum.</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quisquam sunt, aliquam fugiat earum a debitis assumenda quas labore pariatur ab eveniet voluptatem, impedit ad eligendi non obcaecati adipisci. Maiores pariatur asperiores quasi, odit accusamus nulla eos. Nobis facilis placeat suscipit illo ea laudantium repellendus expedita iure ad ipsam natus eos similique repellat provident animi vel a repudiandae praesentium aspernatur, corporis laborum quo! Nulla, eveniet obcaecati asperiores cupiditate ex itaque magni.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestiae, sapiente aperiam dicta dolorem praesentium officiis ipsam obcaecati totam cum repudiandae ab esse voluptate iure.</p>
+            </div>
+
+            <div class="comments">
+                <h3>Comments:</h3>
+
+                <ul>
+                    <li>
+                        <img src="./assets/comment-image-1.jpg" alt="Sulaire's display picture being shown.">
+                        <p class="date">Tuesday October 9th, 2019 by Sulaire</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, reprehenderit. Molestias inventore, quia, architecto maxime vitae magnam doloribus natus rerum mollitia sapiente eum autem impedit!</p>
+                    </li>
+                    <li>
+                        <img src="./assets/comment-image-2.jpg" alt="Renzo's display picture being shown.">
+                        <p class="date">Wednesday October 10th, 2019 by Renzo</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore pariatur at voluptates rem libero quidem possimus laboriosam, necessitatibus in non?</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="commentForm">
+                <form action="https://formspree.io/f/xpznwbnp" method="POST" class="commentForm" name="commentForm">
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" placeholder="Email address">
+                
+                    <label for="comment" class="sr-only">comment</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                
+                    <button class="button">Post Comment</button>
+                </form>
+            </div>
+        </section>
+
+        <aside>
+            <div class="asideImgContainer">
+                <img src="./assets/sidebar-image.jpg" alt="Picture of a beer being filled up.">
+            </div>
+
+            <div class="asideContentContainer">
+                <h3>Our mission</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate error atque explicabo asperiores.</p>
+                <a href="#" class="findOutMore">Find out more.</a>
+
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><p>Lorem ipsum dolor sit.</p></li>
+                    <li><p>Lorem ipsum dolor sit.</p></li>
+                    <li><p>Lorem ipsum dolor sit.</p></li>
+                    <li><p>Lorem ipsum dolor sit.</p></li>
+                </ul>
+            </div>
+
+        </aside>
         
     </main>
         

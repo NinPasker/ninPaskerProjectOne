@@ -1,0 +1,11 @@
+.blogHeader {
+    background-image: url(../assets/blog-header-1.jpg);
+    min-height: 75vh;
+    display: flex;
+    background-position: center;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
