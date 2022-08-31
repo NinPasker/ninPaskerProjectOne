@@ -741,6 +741,42 @@ aside {
   -webkit-box-shadow: -20px 20px #FF8327;
           box-shadow: -20px 20px #FF8327;
 }
+.blogPost .blogPostContentContainer {
+  border-left: 4px solid #FF8327;
+  border-bottom: 4px solid #FF8327;
+  position: relative;
+  right: 20px;
+  padding: 100px 40px 60px 100px;
+}
+.blogPost .blogPostContentContainer p {
+  padding-bottom: 30px;
+}
+.blogPost .blogPostContentContainer p.date {
+  line-height: 0;
+  padding-top: 10px;
+}
+
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.comments li {
+  position: relative;
+}
+.comments img {
+  position: absolute;
+  left: -100px;
+  top: 10px;
+}
+
+.date {
+  color: #FF8327;
+}
 
 .blogAside {
   width: 30%;

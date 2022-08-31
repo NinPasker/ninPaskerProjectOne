@@ -23,6 +23,43 @@
             object-fit: cover;
             box-shadow: -20px 20px $logoColor;
         }
+
+        .blogPostContentContainer {
+            border-left: 4px solid $logoColor;
+            border-bottom: 4px solid $logoColor;
+            position: relative;
+            right: 20px;
+            padding: 100px 40px 60px 100px;
+
+            p {
+                padding-bottom: 30px;
+
+                &.date {
+                    line-height: 0;
+                    padding-top: 10px;
+                }
+            }
+        }
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+
+    li {
+        position: relative;
+    }
+
+    img {
+        position: absolute;
+        left: -100px;
+        top: 10px;
+        
+    }
+}
+
+.date {
+    color: $logoColor;
 }
 
 .blogAside {
