@@ -9,9 +9,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/842291e0cc.js" crossorigin="anonymous"></script>
+    <script>
+        function homeFunction() {
+            toggle.checked = false;
+        }
+    </script>
 </head>
 <body>
     <a href="#mainContent" class="skipLink">Skip to the main content.</a>
+
+    <div class="menu-wrap">
+        <!-- Hamburger Menu for Mobile -->
+        <input type="checkbox" class="toggle" id="toggle">
+    
+        <div class="hamburger">
+            <div></div>
+        </div> <!-- END .hamburger -->
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="index.html" onclick="homeFunction()">Home</a></li>
+                        <li><a href="#highlights" onclick="homeFunction()">About</a></li>
+                        <li><a href="blog.html" onclick="homeFunction()">Blog</a></li>
+                        <li><a href="contact.html" onclick="homeFunction()">Contact</a></li>
+                    </ul>
+    
+                    <ul class="socialIcons">
+                        <li>
+                            <a href="https://www.instagram.com/_ninseyy/" target="_blank" onclick="homeFunction()">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" onclick="homeFunction()">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.snapchat.com/" target="_blank" onclick="homeFunction()">
+                                <i class="fa-brands fa-snapchat"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/_DevNin" target="blank" onclick="homeFunction()">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul> <!-- END .socialIcons -->
+                </div>
+            </div>
+        </div> <!-- menu -->
+    </div> <!-- END .menu-wrap-->
     
     <nav class="navBar">
         <div class="wrapper">

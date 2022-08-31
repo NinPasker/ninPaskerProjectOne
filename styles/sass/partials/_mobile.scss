@@ -1,0 +1,135 @@
+// Desktop adjustmesnts for screens around 1200px
+
+// index styling
+
+.topNav .wrapper ul {
+    @include breakpoint(large) {
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        li {
+            width: 100%;
+        }
+    }
+}
+
+.planLocationsContainer {
+    @include breakpoint(large) {
+        flex-direction: column;
+    }
+
+    .newLocations .wrapper {
+        @include breakpoint(large) {
+            h3 {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .newLocations .wrapper,
+    .planAhead .wrapper {
+        @include breakpoint(large) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    .newLocations img,
+    .planAhead img {
+        @include breakpoint(large) {
+            position: static;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+// navbar breakpoints
+
+.navBar,
+.socialNav .socialIcons {
+    @include breakpoint(medium) {
+        visibility: hidden;
+    }
+}
+
+.menu-wrap {
+    @include breakpoint(medium) {
+        visibility: visible;
+    }
+}
+
+// mobile styling (tablet)
+
+// contact page styling
+.contactHeader,
+.blogHeader {
+    @include breakpoint(medium) {
+        min-height: 40vh;
+
+        .contactTitle,
+        .blogTitle {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+address {
+    @include breakpoint(medium) {
+        text-align: center;
+
+        .socialBar {
+            width: 50%;
+            margin: 0 auto 40px;
+        }
+    }
+}
+
+.contactForm {
+    @include breakpoint(medium) {
+        margin-top: 20px;
+        position: static;
+        width: 100%;
+    }
+}
+
+.contactAside {
+    @include breakpoint(medium) {
+        margin-bottom: 50px;
+    }
+}
+// blog page stlying 
+
+.blogPage {
+    @include breakpoint(medium) {
+        margin-bottom: 0;
+    }
+}
+
+.blogAside {
+    @include breakpoint(medium) {
+        display: none;
+    }
+}
+
+.blogPost {
+    @include breakpoint(medium) {
+        position: static;
+        width: 100%;
+        margin: 20px auto 0;
+
+        .newMenuPic {
+            width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .blogPostContentContainer {
+            position: static;
+            border-left: none;
+        }
+    }
+}
