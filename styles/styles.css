@@ -720,3 +720,28 @@ aside {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.blogPost {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 550px;
+  right: 0;
+}
+.blogPost .newMenuPic {
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: -20px 20px #FF8327;
+          box-shadow: -20px 20px #FF8327;
+}
+
+.blogAside {
+  width: 30%;
+}
