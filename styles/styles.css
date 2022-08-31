@@ -1186,3 +1186,16 @@ address .socialBar {
     border-left: none;
   }
 }
+
+@media (max-width: 500px) {
+  #top h1 {
+    font-size: 150px;
+    font-size: 7.5rem;
+  }
+  #top h2 {
+    margin: 0;
+  }
+  #top img {
+    display: none;
+  }
+}

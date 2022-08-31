@@ -133,3 +133,24 @@ address {
         }
     }
 }
+
+// mobile styling (phones)
+
+// index page styling
+
+#top {
+    @include breakpoint(small) {
+        h1 {
+            @include fontSize(150)
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        img {
+            display: none;
+        }
+    }
+}
+
