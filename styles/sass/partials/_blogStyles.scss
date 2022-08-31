@@ -46,15 +46,81 @@
     display: flex;
     flex-direction: column;
 
+    h3 {
+        margin: 50px 0 20px;
+    }
+
     li {
         position: relative;
+        margin-left: 100px;
+        margin-bottom: 80px;
+
+        p {
+            padding-left: 10px;
+        }
     }
 
     img {
         position: absolute;
         left: -100px;
         top: 10px;
-        
+        width: 7%;
+    }
+}
+
+.commentForm {
+    display: flex;
+    flex-wrap: wrap;
+
+    #name,
+    #email {
+        width: calc(50% - 30px);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid $logoColor;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    #name {
+        margin-right: 15px;
+    }
+    
+    #email {
+        margin-left: 15px;
+    }
+    
+    #comment,
+    .button {
+        width: calc(100% - 30px);
+    }
+    
+    #comment {
+        padding-left: 20px;
+        padding-top: 40px;
+        resize: none;
+        margin-bottom: 50px;
+        border: 2px solid $logoColor;
+    }
+    
+    .button {
+        border: none;
+        margin: 0 0 50px 0;
+        color: $white;
+    }
+
+    #name,
+    #email,
+    #comment {
+        background-color: transparent;
+        color: $white;
+    
+        &::placeholder {
+            opacity: 1;
+            font-family: $bodyText;
+        }
     }
 }
 

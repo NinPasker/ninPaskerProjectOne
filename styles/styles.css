@@ -765,13 +765,91 @@ aside {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.comments h3 {
+  margin: 50px 0 20px;
+}
 .comments li {
   position: relative;
+  margin-left: 100px;
+  margin-bottom: 80px;
+}
+.comments li p {
+  padding-left: 10px;
 }
 .comments img {
   position: absolute;
   left: -100px;
   top: 10px;
+  width: 7%;
+}
+
+.commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.commentForm #name,
+.commentForm #email {
+  width: calc(50% - 30px);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #FF8327;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.commentForm #name {
+  margin-right: 15px;
+}
+.commentForm #email {
+  margin-left: 15px;
+}
+.commentForm #comment,
+.commentForm .button {
+  width: calc(100% - 30px);
+}
+.commentForm #comment {
+  padding-left: 20px;
+  padding-top: 40px;
+  resize: none;
+  margin-bottom: 50px;
+  border: 2px solid #FF8327;
+}
+.commentForm .button {
+  border: none;
+  margin: 0 0 50px 0;
+  color: #FFFFFF;
+}
+.commentForm #name,
+.commentForm #email,
+.commentForm #comment {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.commentForm #name::-webkit-input-placeholder, .commentForm #email::-webkit-input-placeholder, .commentForm #comment::-webkit-input-placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
+}
+.commentForm #name::-moz-placeholder, .commentForm #email::-moz-placeholder, .commentForm #comment::-moz-placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
+}
+.commentForm #name:-ms-input-placeholder, .commentForm #email:-ms-input-placeholder, .commentForm #comment:-ms-input-placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
+}
+.commentForm #name::-ms-input-placeholder, .commentForm #email::-ms-input-placeholder, .commentForm #comment::-ms-input-placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
+}
+.commentForm #name::placeholder,
+.commentForm #email::placeholder,
+.commentForm #comment::placeholder {
+  opacity: 1;
+  font-family: "Chathura", sans-serif;
 }
 
 .date {
