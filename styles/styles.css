@@ -704,6 +704,10 @@ aside {
   margin: 100px 0 250px;
 }
 
+.blogPage {
+  margin-bottom: 2500px;
+}
+
 .blogHeader {
   background-image: url(../assets/blog-header-1.jpg);
   min-height: 75vh;
@@ -722,7 +726,7 @@ aside {
 }
 
 .blogPost {
-  width: 60%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,14 +777,11 @@ aside {
   margin-left: 100px;
   margin-bottom: 80px;
 }
-.comments li p {
-  padding-left: 10px;
-}
 .comments img {
   position: absolute;
   left: -100px;
   top: 10px;
-  width: 7%;
+  width: 10%;
 }
 
 .commentForm {
@@ -857,5 +858,34 @@ aside {
 }
 
 .blogAside {
-  width: 30%;
+  width: 40%;
+  position: relative;
+}
+.blogAside img {
+  z-index: 10;
+}
+.blogAside .bkgBox {
+  width: 400px;
+  height: 830px;
+  background-color: #220303;
+  position: absolute;
+  top: 15px;
+  left: 70px;
+  z-index: -1;
+}
+.blogAside .bkgBox .asideContentContainer {
+  margin-top: 440px;
+}
+.blogAside .bkgBox .asideContentContainer .findOutMore {
+  color: #FF8327;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.blogAside .recentPosts li {
+  margin: 0 0 0 40px;
+  list-style: disc;
+  color: #BF2603;
+}
+.blogAside .recentPosts li p {
+  color: #FFFFFF;
 }

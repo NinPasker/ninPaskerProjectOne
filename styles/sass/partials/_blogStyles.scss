@@ -1,3 +1,7 @@
+.blogPage {
+    margin-bottom: 2500px;
+}
+
 .blogHeader {
     background-image: url(../assets/blog-header-1.jpg);
     min-height: 75vh;
@@ -11,7 +15,7 @@
 }
 
 .blogPost {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -54,17 +58,13 @@
         position: relative;
         margin-left: 100px;
         margin-bottom: 80px;
-
-        p {
-            padding-left: 10px;
-        }
     }
 
     img {
         position: absolute;
         left: -100px;
         top: 10px;
-        width: 7%;
+        width: 10%;
     }
 }
 
@@ -129,5 +129,42 @@
 }
 
 .blogAside {
-    width: 30%;
+    width: 40%;
+    position: relative;
+
+    img {
+        z-index: 10;
+    }
+
+    .bkgBox {
+        width: 400px;
+        height: 830px;
+        background-color: $bkgColor2;
+        position: absolute;
+        top: 15px;
+        left: 70px;
+        z-index: -1;
+
+        .asideContentContainer {
+            margin-top: 440px;
+
+            .findOutMore {
+                color: $logoColor;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .recentPosts li {
+        margin: 0 0 0 40px;
+        list-style: disc;
+        color: $buttonColor;
+
+        p {
+            color: $white;
+        }
+    }
+
+
 }
