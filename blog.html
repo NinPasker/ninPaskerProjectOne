@@ -10,11 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/842291e0cc.js" crossorigin="anonymous"></script>
-    <script>
-        function homeFunction() {
-            toggle.checked = false;
-        }
-    </script>
 </head>
 <body>
     <a href="#mainContent" class="skipLink">Skip to the main content.</a>
@@ -30,30 +25,30 @@
             <div>
                 <div>
                     <ul>
-                        <li><a href="index.html" onclick="homeFunction()">Home</a></li>
-                        <li><a href="#highlights" onclick="homeFunction()">About</a></li>
-                        <li><a href="blog.html" onclick="homeFunction()">Blog</a></li>
-                        <li><a href="contact.html" onclick="homeFunction()">Contact</a></li>
+                        <li><a href="index.html" class="mobile-menu">Home</a></li>
+                        <li><a href="index.html#about" class="mobile-menu">About</a></li>
+                        <li><a href="blog.html" class="mobile-menu">Blog</a></li>
+                        <li><a href="contact.html" class="mobile-menu">Contact</a></li>
                     </ul>
     
                     <ul class="socialIcons">
                         <li>
-                            <a href="https://www.instagram.com/" target="_blank" onclick="homeFunction()">
+                            <a href="https://www.instagram.com/" target="_blank" class="mobile-menu">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank" onclick="homeFunction()">
+                            <a href="https://www.facebook.com/" target="_blank" class="mobile-menu">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/nin-pasker-developer/" target="_blank" onclick="homeFunction()">
+                            <a href="https://www.linkedin.com/in/nin-pasker-developer/" target="_blank" class="mobile-menu">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/_DevNin" target="blank" onclick="homeFunction()">
+                            <a href="https://twitter.com/_DevNin" target="blank" class="mobile-menu">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </li>
@@ -67,7 +62,7 @@
         <div class="wrapper">
             <ul class="mainMenu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html" class="logo">Bar-One</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -119,7 +114,7 @@
 
             <div class="commentForm">
                 <div class="wrapper">
-                    <form action="https://formspree.io/f/xpznwbnp" method="POST" class="commentForm" name="commentForm">
+                    <form action="#" method="POST" class="commentForm" name="commentForm">
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" id="name" placeholder="Name">
                     
@@ -129,7 +124,7 @@
                         <label for="comment" class="sr-only">comment</label>
                         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
                     
-                        <button class="button">Post Comment</button>
+                        <button class="button" disabled>Post Comment</button>
                     </form>
                 </div>
             </div>
@@ -163,5 +158,7 @@
     <footer>
         <p>Copyright © 2019 HackerYou</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

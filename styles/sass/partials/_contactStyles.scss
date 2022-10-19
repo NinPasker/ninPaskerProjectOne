@@ -75,6 +75,12 @@ address {
         &:focus {
             color: $buttonColor;
         }
+
+        &:hover:disabled,
+        &:focus:disabled {
+            opacity: .7;
+            cursor: not-allowed;
+        }
     }
 
     #name,
@@ -99,7 +105,7 @@ address {
 
         &:hover,
         &:focus {
-            color: $logoColor
+            color: $logoColor;
         }
     }
 }

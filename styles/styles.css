@@ -693,6 +693,10 @@ address .socialBar {
 .contactForm .button:hover, .contactForm .button:focus {
   color: #BF2603;
 }
+.contactForm .button:hover:disabled, .contactForm .button:focus:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
 .contactForm #name,
 .contactForm #email,
 .contactForm #message {
