@@ -1249,8 +1249,16 @@ address .socialBar {
   .hostEvents .eventsContentContainer h3 {
     margin-top: 20px;
   }
+  .hostEvents .hostEventsImgContainer .wrapper ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .hostEvents .hostEventsImgContainer .wrapper ul li {
-    width: 90%;
+    width: 45%;
+    padding: 10px;
   }
 }
 
@@ -1274,13 +1282,54 @@ address .socialBar {
   }
 }
 
-.hostEvents .hostEventsImgContainer .wrapper ul {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (max-width: 500px) {
+  .contactForm {
+    padding: 50px 0px 40px;
+    -webkit-box-shadow: 10px 10px #FF8327;
+            box-shadow: 10px 10px #FF8327;
+  }
+  .contactForm #name {
+    margin-right: 0;
+  }
+  .contactForm #email {
+    margin-left: 0;
+  }
+  .contactForm #name,
+.contactForm #email {
+    width: 90%;
+  }
 }
-.hostEvents .hostEventsImgContainer .wrapper ul li {
-  padding-bottom: 20px;
+
+@media (max-width: 500px) {
+  .blogPost .newMenuPic {
+    width: 90%;
+    -webkit-box-shadow: -5px 5px #FF8327;
+            box-shadow: -5px 5px #FF8327;
+  }
+  .blogPost .blogPostContentContainer {
+    padding: 50px 20px;
+  }
+  .blogPost .comments li {
+    margin-left: 80px;
+    margin-bottom: 60px;
+  }
+  .blogPost .comments img {
+    left: -75px;
+    width: 20%;
+  }
+  .blogPost .commentForm {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogPost .commentForm #name {
+    margin-right: 0;
+  }
+  .blogPost .commentForm #email {
+    margin-left: 0;
+  }
+  .blogPost .commentForm #name,
+.blogPost .commentForm #email {
+    width: 90%;
+  }
 }
