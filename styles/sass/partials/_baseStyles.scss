@@ -38,6 +38,13 @@ a {
     font-family: $headingText;
     letter-spacing: 2px;
     margin-bottom: 80px;
+    transition: .3s;
+
+    &:hover,
+    &:focus {
+        background-color: white;
+        color: $buttonColor;
+    }
 }
 
 .topNav p,

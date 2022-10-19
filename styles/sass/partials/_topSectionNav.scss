@@ -16,6 +16,12 @@
                 display: flex;
                 align-items: center;
                 position: relative;
+                transition: .3s;
+
+                &:hover,
+                &:focus {
+                    color: $logoColor;
+                }
 
                 i {
                     position: absolute;

@@ -134,6 +134,44 @@ address {
     }
 }
 
+.hostEvents {
+    @include breakpoint(medium) {
+        .eventsContainer {
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+
+                .eventsImgContainer {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+
+                    img {
+                        box-shadow: -5px 5px #FF8327;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .eventsContentContainer {
+            margin-left: 0;
+
+            h3 {
+                margin-top: 20px;
+            }
+        }
+
+        .hostEventsImgContainer {
+            .wrapper {
+                ul li {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
 // mobile styling (phones)
 
 // index page styling
@@ -154,3 +192,28 @@ address {
     }
 }
 
+.planLocationsContainer {
+    .newLocations,
+    .planAhead {
+        .wrapper {
+            @include breakpoint(small) {
+                width: 90%;
+            }
+        }
+    }
+}
+
+.hostEvents {
+    .hostEventsImgContainer {
+        .wrapper {
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                li {
+                    padding-bottom: 20px
+                }
+            }
+        }
+    }
+}

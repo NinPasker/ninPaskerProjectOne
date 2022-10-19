@@ -336,6 +336,12 @@ a {
   font-family: "Tulpen One", cursive;
   letter-spacing: 2px;
   margin-bottom: 80px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.button:hover, .button:focus {
+  background-color: white;
+  color: #BF2603;
 }
 
 .topNav p,
@@ -375,6 +381,14 @@ a {
   font-size: 38px;
   font-size: 1.9rem;
   letter-spacing: 1.9px;
+}
+.navBar .mainMenu a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navBar .mainMenu a:hover,
+.navBar .mainMenu a:focus {
+  color: #FF8327;
 }
 .navBar .mainMenu .logo {
   font-family: "Tulpen One", cursive;
@@ -458,6 +472,11 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.topNav .wrapper ul li a:hover, .topNav .wrapper ul li a:focus {
+  color: #FF8327;
 }
 .topNav .wrapper ul li a i {
   position: absolute;
@@ -669,6 +688,10 @@ address .socialBar {
   border: none;
   margin: 0;
   color: #FFFFFF;
+  cursor: pointer;
+}
+.contactForm .button:hover, .contactForm .button:focus {
+  color: #BF2603;
 }
 .contactForm #name,
 .contactForm #email,
@@ -702,6 +725,13 @@ address .socialBar {
 .contactAside {
   position: relative;
   margin: 100px 0 250px;
+}
+.contactAside a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contactAside a:hover, .contactAside a:focus {
+  color: #FF8327;
 }
 
 .blogPage {
@@ -823,6 +853,12 @@ address .socialBar {
   border: none;
   margin: 0 0 50px 0;
   color: #FFFFFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.commentForm .button:hover, .commentForm .button:focus {
+  color: #FF8327;
 }
 .commentForm #name,
 .commentForm #email,
@@ -1187,6 +1223,37 @@ address .socialBar {
   }
 }
 
+@media (max-width: 1080px) {
+  .hostEvents .eventsContainer .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hostEvents .eventsContainer .wrapper .eventsImgContainer {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .hostEvents .eventsContainer .wrapper .eventsImgContainer img {
+    -webkit-box-shadow: -5px 5px #FF8327;
+            box-shadow: -5px 5px #FF8327;
+    width: auto;
+  }
+  .hostEvents .eventsContentContainer {
+    margin-left: 0;
+  }
+  .hostEvents .eventsContentContainer h3 {
+    margin-top: 20px;
+  }
+  .hostEvents .hostEventsImgContainer .wrapper ul li {
+    width: 90%;
+  }
+}
+
 @media (max-width: 500px) {
   #top h1 {
     font-size: 150px;
@@ -1198,4 +1265,22 @@ address .socialBar {
   #top img {
     display: none;
   }
+}
+
+@media (max-width: 500px) {
+  .planLocationsContainer .newLocations .wrapper,
+.planLocationsContainer .planAhead .wrapper {
+    width: 90%;
+  }
+}
+
+.hostEvents .hostEventsImgContainer .wrapper ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hostEvents .hostEventsImgContainer .wrapper ul li {
+  padding-bottom: 20px;
 }

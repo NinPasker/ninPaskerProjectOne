@@ -109,6 +109,13 @@
         border: none;
         margin: 0 0 50px 0;
         color: $white;
+        transition: .3s;
+        cursor: pointer;
+            
+            &:hover,
+            &:focus {
+                color: $logoColor
+            }
     }
 
     #name,
